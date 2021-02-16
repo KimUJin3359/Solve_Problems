@@ -1,7 +1,5 @@
 # SolveProblems
 
-Study on 210205
-
 #### 관련 문제
 
 [1.Square Room](https://github.com/KimUJin3359/SolveProblems/blob/master/SquareRoom/SquareRoom/%EC%86%8C%EC%8A%A4.cpp)
@@ -23,3 +21,14 @@ Study on 210205
     - greedy
       - 최악의 경우 tree상에 결과값(BFS)이 끝으로 갈수록 커진다면 모든 경우를 다 봐줘야 될 수 있음
       - 이를 대비하여, 처음 경우에 확률 중 큰 값 만을 찾아서 곱해 만든 결과값을 기준점으로 지정
+
+[3.Remote Control](https://github.com/KimUJin3359/SolveProblems/blob/master/RemoteControl/RemoteControl/main.cpp)
+- [문제](https://www.acmicpc.net/problem/1107)
+- 임의의 숫자 버튼이 고장난 리코먼이 존재
+- 고장난 버튼을 제외하고 0~9까지의 숫자와 +/- 버튼이 존재할 때, 몇 번을 눌러야 최소한의 횟수로 원하는 채널을 볼 수 있는가
+- 기존 채널 번호는 100번
+- 접근 방법
+  - BFS
+  - 0번 부터 1000000번까지 만들 수 있는 모든 수에대해 계산
+  - default 값과의 차(100번으로부터 +/-만 눌렀을 때)와 위의 만들어지는 횟수를 비교하여 최종 결론 도출
+- 어려웠던 점 및 해결방법은 주석으로 정리  

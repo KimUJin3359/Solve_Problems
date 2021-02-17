@@ -24,7 +24,7 @@
 
 [3.Remote Control](https://github.com/KimUJin3359/SolveProblems/blob/master/RemoteControl/RemoteControl/main.cpp)
 - [문제](https://www.acmicpc.net/problem/1107)
-- 임의의 숫자 버튼이 고장난 리코먼이 존재
+- 임의의 숫자 버튼이 고장난 리모컨이 존재
 - 고장난 버튼을 제외하고 0~9까지의 숫자와 +/- 버튼이 존재할 때, 몇 번을 눌러야 최소한의 횟수로 원하는 채널을 볼 수 있는가
 - 기존 채널 번호는 100번
 - 접근 방법
@@ -32,3 +32,34 @@
   - 0번 부터 1000000번까지 만들 수 있는 모든 수에대해 계산
   - default 값과의 차(100번으로부터 +/-만 눌렀을 때)와 위의 만들어지는 횟수를 비교하여 최종 결론 도출
 - 어려웠던 점 및 해결방법은 주석으로 정리  
+
+[4.Amusement Park](https://github.com/KimUJin3359/SolveProblems/blob/master/AmusementPark.c)
+- [문제](https://www.acmicpc.net/problem/1561)
+- [초안](https://github.com/KimUJin3359/SolveProblems/blob/master/AmusementPark/AmusementPark/main.cpp)
+- N명의 아이들이 M종류의 1인승 놀이기구를 타려함
+- 놀이기구에는 1번부터 M번까지 번호가 정해져있고, 각각의 운행 시간이 정해져 있음
+- N번째 아이가 타게 될 놀이기구의 번호를 출력
+- 접근 방법
+  - Brute-Force
+    - 처음에는 입력받은 배열을 가지고, 시간의 흐름에 따라 타게 되는 아이들을 다 검색해서 계산을 해줌
+    - N명의 아이들이 있을 때, 최대 N * 30M번의 경우(1개의 놀이기구만 30분을 간격으로 운영)를 봐줘야 할 경우가 될 수 있음으로 실행시간 초과 발생
+  - Brute-Force
+    - 입력받은 배열을 시간에 따라(1~30분) 해당 인원의 수를 계산해서 넣어줌
+    - N명의 아이들이 있어도, 최대 30 * 30M번의 경우만 봐주면 됨
+    - 위 계산의 결과가, 원하는 값을 초과했을 때 그 전으로 복귀해 계산
+    - 많은 경우의 수를 줄였다고 생각했으나, 실행시간 초과 발생
+  - Brute-Force + Binary Search
+    - 위의 경우에도, 모든 시간값을 다 봐주게 된다면 최대 60000000000번을 봐줘야 되었었음
+    - 이를 binary search로 시간 단축하였음
+    - 자랑아닌 자랑이지만 **시간, 공간적으로 가장 적은 방법**으로 해결
+![캡처(1)](https://user-images.githubusercontent.com/50474972/108233793-77d67880-7187-11eb-98df-781bdb9f6128.JPG)
+
+[5.Subset Sum](https://github.com/KimUJin3359/SolveProblems/blob/master/SubsetSum.c)
+- [문제](https://www.acmicpc.net/problem/1806)
+- 10,000 이하의 자연수로 이루어진 길이 N짜리 수열이 주어짐
+- 연속된 수들의 부분합 중, 그 합이 주어지는 값(S) 이상 되는 것 중 가장 짧은 것의 길이를 구하는 문제
+- 접근 방법
+  - DP 
+    - 배열의 첫 번째 값에는 입력받은 값을 저장
+    - 배열의 두 번째 값에는 S보다 작은 앞의 수들과의 합을 저장
+    - index를 통해 시작 점을 잡아주고, 현재 읽은 수를 이 전의 합과 합쳤을 때 S를 넘는다면 index 값을 뺴주며 길이 확인

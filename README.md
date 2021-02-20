@@ -83,3 +83,30 @@
 - 접근 방법
   - 문자열의 길이에 따른 substring을 구함
   - find 함수로 문자열 끝까지 substring을 찾아갈 때, 결과 값이 발견했던 index + length 과 같으면 계속해서 탐색하고 같지 않을 시 다음 케이스를 확인
+
+[8.Pascal Triangle](https://github.com/KimUJin3359/SolveProblems/blob/master/PascalTriangle/PascalTriangle/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5P0-h6Ak4DFAUq)
+- 크기가 N인 파스칼 삼각형 만들기
+  - 첫 번째 줄은 항상 1
+  - 두 번째 줄부터 각 숫자들은 자신의 왼쪽과 오른쪽 위의 숫자의 합으로 구성
+- 접근 방법
+  - 1 ~ 10의 결과값을 만들어둔다
+  - 입력 받는 값에 따라, 출력
+  - 개선 방안
+    - 문제를 풀면서 채워놓고, 값이 존재하지 않을 때만 추가적으로 더 해를 구하기(DP)
+
+[9.Get Middle Average](https://github.com/KimUJin3359/SolveProblems/blob/master/GetMiddleAverage/GetMiddleAverage/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Pw_-KAdcDFAUq)
+- 10개의 수를 입력 받아, 최대 수와 최소 수를 제외한 나머지의 평균값을 출력하는 프로그램
+- 첫째 자리에서 반올림
+- 접근 방법
+  - 입력받으면서 최대, 최소값 찾기
+  - 그를 제외한 나머지들의 합을 구해서 %연산을 활용하여 반올림
+  
+[10.Read Column](https://github.com/KimUJin3359/SolveProblems/blob/master/ReadColumn/ReadColumn/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVWgkP6sQ0DFAUO)
+- 다섯개의 단어가 주어짐
+- 단어의 길이는 서로 다를 수 있음
+- 이를 세로로 읽었을 때 나오는 문자열을 구하는 문제
+- 접근 방법
+  - 읽은 값이 0일 때를 제외하고, 문자열에 이어 붙임

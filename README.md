@@ -63,3 +63,23 @@
     - 배열의 첫 번째 값에는 입력받은 값을 저장
     - 배열의 두 번째 값에는 S보다 작은 앞의 수들과의 합을 저장
     - index를 통해 시작 점을 잡아주고, 현재 읽은 수를 이 전의 합과 합쳤을 때 S를 넘는다면 index 값을 뺴주며 길이 확인
+
+### Coding Test 준비(라이브러리 사용)
+
+[6.Rich Project](https://github.com/KimUJin3359/SolveProblems/blob/master/RichProject/RichProject/main.cpp)
+- [문제](https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc&categoryId=AV5LrsUaDxcDFAXc&categoryType=CODE)
+- 원재는 연속된 N일 동안의 물건의 매매가를 예측하여 알고 있음
+- 하루 최대 1개만큼 구입할 수 있음
+- 판매는 언제든지 할 수 있음
+- 원재가 벌 수 있는 최대이익 계산
+- 접근 방법
+  - max priority queue를 사용하여, 최대 값의 index와 value를 저장함
+  - queue에서 top에 있는 원소를 확인하여, 현재 index 값보다 뒤에 있는 경우 top 원소의 index 까지 차익을 계산해 더해감
+
+[7.Pattern Length](https://github.com/KimUJin3359/SolveProblems/blob/master/PatternLength/PatternLength/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5P1kNKAl8DFAUq&categoryId=AV5P1kNKAl8DFAUq&categoryType=CODE)
+- 각 문자열의 길이는 30
+- 마디의 최대 길이는 10일 때, 마디의 최소 길이를 출력
+- 접근 방법
+  - 문자열의 길이에 따른 substring을 구함
+  - find 함수로 문자열 끝까지 substring을 찾아갈 때, 결과 값이 발견했던 index + length 과 같으면 계속해서 탐색하고 같지 않을 시 다음 케이스를 확인

@@ -110,3 +110,21 @@
 - 이를 세로로 읽었을 때 나오는 문자열을 구하는 문제
 - 접근 방법
   - 읽은 값이 0일 때를 제외하고, 문자열에 이어 붙임
+
+[11.Kill Flies](https://github.com/KimUJin3359/SolveProblems/blob/master/KillFlies/KillFlies/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PzOCKAigDFAUq&)
+- 접근 방법
+  - 각 범위의 사각형 만큼 합을 구해 최대값을 구함(brute force)
+- 알게된 점
+  - 동적할당은 정적할당보다 시간이 더 많이 걸림
+  - 그렇기 때문에, 코딩 테스트에서는 동적할당보다 정적할당이 유용
+  
+[12.Where To Insert](https://github.com/KimUJin3359/SolveProblems/blob/master/WhereToInsert/WhereToInsert/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PuPq6AaQDFAUq)
+- 접근 방법
+  - 행, 열에 따라 문자가 들어갈 수 있는 길이를 구하여, 원하는 값과 같을 시 결과값을 더하기 1(brute force)
+
+[13.Vertificate Sudoku](https://github.com/KimUJin3359/SolveProblems/blob/master/VertificateSudoku/VertificateSudoku/main.cpp)
+- [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Psz16AYEDFAUq)
+- 접근 방법
+  - 행, 열, 사각형을 기준으로 각 원소가 정확히 1~9까지 중복되지 않고 존재하는지 확인(brute force)

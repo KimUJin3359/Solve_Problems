@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\u jin\desktop\ssafy_프로젝트\ssafy_algorithm\0223\treerecursion\treerecursion\main.cpp(20): warning C4101: 'p_i' :참조되지 않은 지역 변수입니다.
+  TreeRecursion.vcxproj -> C:\Users\U JIn\Desktop\ssafy_프로젝트\Ssafy_algorithm\0223\TreeRecursion\Debug\TreeRecursion.exe

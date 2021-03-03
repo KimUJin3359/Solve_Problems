@@ -128,3 +128,26 @@
 - [문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Psz16AYEDFAUq)
 - 접근 방법
   - 행, 열, 사각형을 기준으로 각 원소가 정확히 1~9까지 중복되지 않고 존재하는지 확인(brute force)
+
+[14.Count Group(SW Expert Academy : 창용 마을 무리의 개수)](https://github.com/KimUJin3359/Solve_Problems/blob/master/CountGroup.cpp)
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AWngfZVa9XwDFAQU&probBoxId=AXf1vIAqWMkDFAUO&type=PROBLEM&problemBoxTitle=Day+16%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B41%29&problemBoxCnt=3)
+- 두 사람이 서로 아는 관계이거나 몇 사람을 거쳐서 알 수 있는 관계일 경우 같은 무리라고 함
+- 몇 개의 무리가 존재하는지 계산하는 프로그램
+- 접근 방법
+  - Disjoint-set 사용
+
+[15.Make Number(SW Expert Academy : 숫자 만들기)](https://github.com/KimUJin3359/Solve_Problems/blob/master/MakeNumber.cpp)
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AWIeRZV6kBUDFAVH&probBoxId=AXf1vIAqWMkDFAUO&type=PROBLEM&problemBoxTitle=Day+16%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B41%29&problemBoxCnt=3)
+- n개의 숫자와 n - 1개의 연산자를 입력받아 만들 수 있는 maximum, minimum의 차를 출력하는 문제
+- 연산자의 우선 순위는 고려하지 않음
+- 접근 방법
+  - Back tracking
+    - 깊이 우선탐색을 하지만 이전에 결과를 도출했던 연산자를 또 사용하지 않음
+    - (n - 1)개의 연산자 중 중복되는 연산자가 다수 존재/ 중복 배제
+
+[16.Swimming Pool(SW Expert Academy : 수영장)](https://github.com/KimUJin3359/Solve_Problems/blob/master/SwimmingPool.cpp)
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5PpFQaAQMDFAUq&probBoxId=AXf1vIAqWMkDFAUO&type=PROBLEM&problemBoxTitle=Day+16%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B41%29&problemBoxCnt=3)
+- 일간, 월간, 3월간, 연간 이용권이 존재할 때 최소 비용으로 수영장을 이용할 떄의 요금을 구하는 문제
+- 접근 방법
+  - Back tracking
+    - 일간 이용권(개장 일 수 * 일간 이용권 가격), 월간 이용권을 비교하여 월간 이용권의 가격이 더 비싼 경우 해당 case를 확인하지 않음

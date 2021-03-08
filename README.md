@@ -180,3 +180,14 @@
 - A음식과 B음식의 맛의 차이가 최소가 되도록 재료를 배분하는 문제
 - 접근 방법
   - DFS : 순열
+
+[20. Rolling Dice(Baekjoon : 주사위 굴리기)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/RollingDice.cpp)
+- [문제](https://www.acmicpc.net/problem/14499)
+- 주사위를 굴림
+- 동, 서, 남, 북 방향에 따라 주사위도 회전함
+- 주사위를 옮길 때, 해당 지도의 값이 0이면 주사위 바닥면의 값이 지도의 값에 복사
+- 주사위를 옮길 때, 해당 지도의 값이 0이 아니면 지도의 값이 주사위의 바닥면에 복사되고, 지도의 값은 0이 됨
+- 주사위는 지도의 바깥으로 나갈 수 없음
+- 접근 방법
+  - 알고리즘 : 동, 서, 남, 북으로 이동할 때 해당 주사위가 바뀌는 규칙을 찾아 해당 값을 setting
+  - 주사위과 동, 서, 남, 북으로 움직일 수 있기 때문에 배열을 사용해서 앞뒤를 한칸씩 밀어주는 것보다, deque를 사용한 push_front, push_back을 사용

@@ -7,7 +7,7 @@
 
 ### 관련 문제
 
-#### [알고리즘](https://github.com/KimUJin3359/Solve_Problems/tree/master/ALGORITHM)
+### [알고리즘](https://github.com/KimUJin3359/Solve_Problems/tree/master/ALGORITHM)
 
 [1. Amusement Park](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/AmusementPark.c)
 - [문제](https://www.acmicpc.net/problem/1561)
@@ -58,7 +58,7 @@
   - 알고리즘 : 동, 서, 남, 북으로 이동할 때 해당 주사위가 바뀌는 규칙을 찾아 해당 값을 setting
   - 주사위과 동, 서, 남, 북으로 움직일 수 있기 때문에 배열을 사용해서 앞뒤를 한칸씩 밀어주는 것보다, deque를 사용한 push_front, push_back을 사용
 
-#### [완전탐색](https://github.com/KimUJin3359/Solve_Problems/tree/master/BRUTE_FORCE)
+### [완전탐색](https://github.com/KimUJin3359/Solve_Problems/tree/master/BRUTE_FORCE)
 
 [1. Get Honey(SW Expert Academy : 벌꿀채취)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/GetHoney.cpp)
 - [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5V4A46AdIDFAWu&probBoxId=AXf6ka1a40gDFAUO+&type=PROBLEM&problemBoxTitle=Day+17%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B42%29&problemBoxCnt=3&&&&&&)

@@ -202,3 +202,14 @@
   - 입력 받는 값에 따라, 출력
   - 개선 방안
     - 문제를 풀면서 채워놓고, 값이 존재하지 않을 때만 추가적으로 더 해를 구하기(DP)
+
+[3. Leave(백준 : 퇴사)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/Leave.cpp)
+- [문제](https://www.acmicpc.net/problem/14501)
+- 접근 방법
+  - DP
+  - 첫째 날부터 일을 했을 경우의 결과 값을 일이 끝나는 날에 적음
+  - 당일에 도착했을 때, 전날의 값과 현재의 값을 비교하여 더 큰 값으로 DP 배열을 세팅해감
+  - N째 날에 도착했을 때의 값이 maximum이 됨
+
+
+

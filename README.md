@@ -179,6 +179,13 @@
     - 최악의 경우 tree상에 결과값(BFS)이 끝으로 갈수록 커진다면 모든 경우를 다 봐줘야 될 수 있음
     - 이를 대비하여, 처음 경우에 확률 중 큰 값 만을 찾아서 곱해 만든 결과값을 기준점으로 지정
 
+[7. Mountain Route(SW Expert Academy : 등산로 조성)]()
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5PoOKKAPIDFAUq&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=++3+)
+- 높은 곳(가장 높은 봉우리에서 시작)부터 낮은 곳을 길을 만들 때 최대 길이
+- 입력받은 K의 높이만큼 딱 한번 길을 깎을 수 있음
+- 접근 방식
+  - DFS : 기본적으로 모든 경우의 수를 다 봐줘야 되는 문제
+
 ### [DP](https://github.com/KimUJin3359/Solve_Problems/tree/master/DP)
 
 [1. Catch Runner(SW Expert Academy : 탈주범 검거)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/CatchRunner.cpp)

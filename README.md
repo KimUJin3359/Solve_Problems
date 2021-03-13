@@ -123,6 +123,27 @@
 - 접근 방법
   - 행, 열에 따라 문자가 들어갈 수 있는 길이를 구하여, 원하는 값과 같을 시 결과값을 더하기 1(brute force)
 
+[9. Home Security Service(SW Expert Academy : 홍 방범 서비스)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/HomeSecurityService.cpp)
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5V61LqAf8DFAWu&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=++3+)
+- N * N 크기의 도시가 존재
+- 마름모 모양의 영역에만 홈방범 서비스를 제공
+- 보안회사에서 손해를 보지 않으면서 최대한 많은 집에 홈방범 서비스를 제공하려할 때, 제공받는 가구의 수
+- 접근
+  - Brute Force
+  - 맵을 다채우는 마름모의 크기 (3 / 2) * N 부터 2의 크기까지 모두 확인
+  - 1의 크기는 기본적으로 모든 마을에서 만족함(홍방범 서비스의 비용 1, 가구 지불비용 최소 1)
+
+[10. Launch Time(SW Expert Academy : 점심 식사시간)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/LaunchTime.cpp)
+- [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5-BEE6AK0DFAVl&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=3)
+- 두 개의 계단이 존재
+- 최대 3명의 학생만이 계단을 이용할 수 있고, 한명이 다 쓰고난 후 다음 사람이 쓸 수 있음
+- 모든 사람이 다 내려갈 수 있는 최소 시간 구하기
+- 접근
+  - Brute Force
+  - 각 사람들이 계단1, 계단2로 이동하는 모든 경우의 수를 계산
+  - 실행시간을 단축시키기 위해 bit 연산자 사용
+  - priority queue를 사용해 각 계단에 도착하는 최소 시간의 사람을 구해서 그 사람들 부터 내려보냄
+
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)
 
 [1. Cooking(SW Expert Academy : 요리사)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/Cooking.cpp)

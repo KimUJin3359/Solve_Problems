@@ -45,7 +45,7 @@ void BROUTE_FORCE()
                 P_STAIR2.push(get_distance(PEOPLE[j], STAIR[1]));
         }
         // calculate stair1's time
-        for (int j = 0; j < P_STAIR1.size(); j++)
+        while (P_STAIR1.size())
         {
             if (N_STAIR1.size() < 3)
                 N_STAIR1.push_back(P_STAIR1.top());
@@ -61,38 +61,36 @@ void BROUTE_FORCE()
         {
             while (N_STAIR1.size() != 1)
                 N_STAIR1.pop_front();
-            time = N_STAIR1[0] + M[STAIR[0].first][STAIR[0].second];
+            time = N_STAIR1[0] + M[STAIR[0].first][STAIR[0].second] + 1;
         }
         else 
-            time = 987654321;
+            time = 0;
 
         // calculate stair2's time
-        for (int j = 0; j < P_STAIR2.size(); j++)
+        while (P_STAIR2.size())
         {
             if (N_STAIR2.size() < 3)
-            {
                 N_STAIR2.push_back(P_STAIR2.top());
-                P_STAIR2.pop();
-            }
             else 
             {
                 int time = (P_STAIR2.top() > N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second]) ? P_STAIR2.top() : N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second];
-                P_STAIR2.pop();
                 N_STAIR2.push_back(time);
                 N_STAIR2.pop_front();
             }
+			P_STAIR2.pop();
         }    
         if (N_STAIR2.size())
         {
             while (N_STAIR2.size() != 1)
                 N_STAIR2.pop_front();
-            time = (time > N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second]) ? time : N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second];
+            time = (time > N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second]) ? time : N_STAIR2[0] + M[STAIR[1].first][STAIR[1].second] + 1;
         }
+		if (time < RES)
+			RES = time;
+		N_STAIR1.clear();
+		N_STAIR2.clear();
     }
-    if (time < RES)
-        RES = time;
-    N_STAIR1.clear();
-    N_STAIR2.clear();
+
 }
 
 int main()

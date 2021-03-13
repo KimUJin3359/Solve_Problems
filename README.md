@@ -123,7 +123,7 @@
 - 접근 방법
   - 행, 열에 따라 문자가 들어갈 수 있는 길이를 구하여, 원하는 값과 같을 시 결과값을 더하기 1(brute force)
 
-[9. Home Security Service(SW Expert Academy : 홍 방범 서비스)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/HomeSecurityService.cpp)
+[9. Home Security Service(SW Expert Academy : 홈 방범 서비스)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/HomeSecurityService.cpp)
 - [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5V61LqAf8DFAWu&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=++3+)
 - N * N 크기의 도시가 존재
 - 마름모 모양의 영역에만 홈방범 서비스를 제공

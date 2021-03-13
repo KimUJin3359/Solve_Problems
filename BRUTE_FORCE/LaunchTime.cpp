@@ -28,7 +28,7 @@ priority_queue<int , vector<int>, greater<int> > P_STAIR2;
 deque<int> N_STAIR1;
 deque<int> N_STAIR2;
 
-void BROUTE_FORCE()
+void BRUTE_FORCE()
 {
     int time;
     int num = PEOPLE.size();
@@ -116,7 +116,7 @@ int main()
                     STAIR.push_back(make_pair(i, j));
             }
         }
-        BROUTE_FORCE();
+        BRUTE_FORCE();
         STAIR.clear();
         PEOPLE.clear();
         cout << "#" << C << " " << RES << endl;

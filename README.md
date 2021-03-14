@@ -239,5 +239,30 @@
   - 당일에 도착했을 때, 전날의 값과 현재의 값을 비교하여 더 큰 값으로 DP 배열을 세팅해감
   - N째 날에 도착했을 때의 값이 maximum이 됨
 
+[4. Integer Triangle(백준 : 정수 삼각형)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/IntegerTriangle.cpp)
+- [문제](https://www.acmicpc.net/problem/1932)
+- 맨 위층부터 시작해서 아래에 있는 수 중 하나를 선택하여 아래층으로 내려올 때, 선택된 수의 합이 최대가 되는 경로를 구하는 문제
+- 접근 방법
+  - DP
+  - 맨마지막의 윗층부터, 꼭대기층까지 Bottom-up 방식으로 선택가능한 숫자들 중 가장 큰 숫자를 자기 자신에게 더해감
+
+[5. Subset Sum4(백준 : 구간 합 구하기 4)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/SubsetSum4.cpp)
+- [문제](https://www.acmicpc.net/problem/11659)
+- 수 N개가 주어졌을 때, i번째부터 j번째 수까지 합을 구하는 문제
+- 접근 방법
+  - DP
+  - 숫자를 입력받으면서 그 전까지의 합 + 입력받은 숫자로 배열 초기화
+  - j번째 - (i - 1)번째 값이 i번째부터 j번째 수 까지의 합이 됨
+
+[6. Subset Sum5(백준 : 구간 합 구하기 5)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/SubsetSum5.cpp)
+- [문제](https://www.acmicpc.net/problem/11660)
+- N * N개의 수가 주어졌을 때, (x1, y1)부터 (x2, y2)까지의 합을 구하는 문제
+- 접근 방법
+  - DP
+  - 숫자를 입력받으면서 행 기준으로 그 전까지의 합 + 입력받은 숫자로 배열 초기화
+  - 그 후 열 기준으로 위 index 값 + 현재 index 값으로 초기화
+    - 사각형의 합이 표에 채워짐
+  - (x2, y2) 사각형 - (x1, y2) 사각형 - (x2, y1) 사각형 + (x1, y1) 사각형
+
 
 

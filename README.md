@@ -7,6 +7,7 @@
 
 ### 목차
 - [알고리즘](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+- [BFS]()
 - [완전탐색](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#%EC%99%84%EC%A0%84%ED%83%90%EC%83%89)
 - [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#dfs-%EB%B0%8F-back-tracking)
 - [DP](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#dp)
@@ -63,6 +64,55 @@
 - 접근 방법
   - 알고리즘 : 동, 서, 남, 북으로 이동할 때 해당 주사위가 바뀌는 규칙을 찾아 해당 값을 setting
   - 주사위과 동, 서, 남, 북으로 움직일 수 있기 때문에 배열을 사용해서 앞뒤를 한칸씩 밀어주는 것보다, deque를 사용한 push_front, push_back을 사용
+
+---
+
+### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)
+
+[1. Escape(백준 : 탈출)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/Escape.cpp)
+- [문제](https://www.acmicpc.net/problem/3055)
+- 고슴도치가 비버의 굴로 가능한 빨리 도망가 홍수를 피하려함
+- 매분마다 고슴도치는 현재 있는 칸과 인접한 네 칸 중 하나로 이동
+- 물도 매분마다 비어있는 칸으로 확장
+- 물이 있는 칸과 인접해있는 비어있는 칸또한 고슴도치가 가지 못함
+- 비버의 굴로 이동하기 위한 최소의 시간
+- 접근 방법
+  - BFS
+  - 물을 먼저 한칸씩 이동시킨 후, 고슴도치를 이동시킴
+  - time을 두어 고슴도치가 이동할 때만 물이 한 칸씩 퍼지도록 함
+
+[2. Hide And Seek(백준 : 숨바꼭질)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/HideAndSeek.cpp)
+- [문제](https://www.acmicpc.net/problem/1697)
+- 수빈이는 동생과 숨바꼭질을 함
+- 2배, -1칸, 1칸을 이동할 수 있을 때 동생을 찾는 최소 시간
+- 접근 방법
+  - BFS
+  - 2배, -1칸, 1칸을 이동할 때 마다 같은 값이 나오면 최소값으로 갱신
+
+[3. Make Maze(백준 : 미로만들기)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/MakeMaze.cpp)
+- [문제](https://www.acmicpc.net/problem/2665)
+- n * n크기의 방이 존재
+- 왼쪽 최상단에서 우측 최하단으로 이동할 때, 뚫고 지나가야하는 막힌 방의 갯수
+- 접근 방법
+  - BFS
+  - 다음에 볼 칸(검은색)이 현재의 칸 + 1보다 값이 크면 해당 경로 인
+  - 다음에 볼 칸(흰색)이 현재의 칸보다 값이 크면 해당 경로 확인 
+
+ 
+[4. Move Knight(백준 : 나이트의 이동)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/MoveKnight.cpp)
+- [문제](https://www.acmicpc.net/problem/7562)
+- 체스판 위에 나이트가 놓여져 있음
+- 나이트가 목적지로 이동할 때 지나야하는 최소 동작 수
+- 접근 방법
+  - BFS
+  - 나이트가 움직일 수 있는 8방향을 BFS로 완전 탐색
+ 
+[5. Search Maze(백준 : 미로 탐색)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/SearchMaze.cpp)
+- [문제](https://www.acmicpc.net/problem/2178)
+- N * M크기의 미로가 존재
+- 출발지(1, 1)에서 목적지(N, M)으로 이동할 때 지나야하는 최소 칸의 수
+- 접근 방법
+  - BFS
 
 ---
 

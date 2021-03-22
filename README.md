@@ -5,6 +5,12 @@
 #### 코딩테스트가 목적이니 각 프로그램의 완성도보다는 주어진 시간 내에, 주어진 메모리를 가지고 통과하는데 초점을 둠
 - 예시 : 스택, 힙에 잡히지 않는 전역변수를 주로 사용 
 
+### 목차
+- [알고리즘](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+- [완전탐색](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#%EC%99%84%EC%A0%84%ED%83%90%EC%83%89)
+- [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#dfs-%EB%B0%8F-back-tracking)
+- [DP](https://github.com/KimUJin3359/Solve_Problems/blob/master/README.md#dp)
+
 ---
 
 ### [알고리즘](https://github.com/KimUJin3359/Solve_Problems/tree/master/ALGORITHM)

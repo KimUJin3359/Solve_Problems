@@ -5,7 +5,7 @@
 #### 코딩테스트가 목적이니 각 프로그램의 완성도보다는 주어진 시간 내에, 주어진 메모리를 가지고 통과하는데 초점을 둠
 - 예시 : 스택, 힙에 잡히지 않는 전역변수를 주로 사용 
 
-
+---
 
 ### [알고리즘](https://github.com/KimUJin3359/Solve_Problems/tree/master/ALGORITHM)
 
@@ -57,6 +57,8 @@
 - 접근 방법
   - 알고리즘 : 동, 서, 남, 북으로 이동할 때 해당 주사위가 바뀌는 규칙을 찾아 해당 값을 setting
   - 주사위과 동, 서, 남, 북으로 움직일 수 있기 때문에 배열을 사용해서 앞뒤를 한칸씩 밀어주는 것보다, deque를 사용한 push_front, push_back을 사용
+
+---
 
 ### [완전탐색](https://github.com/KimUJin3359/Solve_Problems/tree/master/BRUTE_FORCE)
 
@@ -144,6 +146,8 @@
   - 실행시간을 단축시키기 위해 bit 연산자 사용
   - priority queue를 사용해 각 계단에 도착하는 최소 시간의 사람을 구해서 그 사람들 부터 내려보냄
 
+---
+
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)
 
 [1. Cooking(SW Expert Academy : 요리사)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/Cooking.cpp)
@@ -206,6 +210,8 @@
 - 입력받은 K의 높이만큼 딱 한번 길을 깎을 수 있음
 - 접근 방식
   - DFS : 기본적으로 모든 경우의 수를 다 봐줘야 되는 문제
+
+---
 
 ### [DP](https://github.com/KimUJin3359/Solve_Problems/tree/master/DP)
 

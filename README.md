@@ -65,6 +65,12 @@
   - 알고리즘 : 동, 서, 남, 북으로 이동할 때 해당 주사위가 바뀌는 규칙을 찾아 해당 값을 setting
   - 주사위과 동, 서, 남, 북으로 움직일 수 있기 때문에 배열을 사용해서 앞뒤를 한칸씩 밀어주는 것보다, deque를 사용한 push_front, push_back을 사용
 
+[5. Quad Tree(알고스팟 : 쿼드트리 뒤집기)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/QuadTree.cpp)
+- [문제](https://algospot.com/judge/problem/read/QUADTREE#)
+- 쿼드 트리로 압축된 흑백 그림이 주어졌을 때, 이 그림을 상하로 뒤집은 그림을 쿼드트리 압축해서 출력하는 프로그램
+- 접근 방법
+  - 쿼드 트리 구현
+  - 출력 시 위아래 뒤집어서 출력
 ---
 
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)

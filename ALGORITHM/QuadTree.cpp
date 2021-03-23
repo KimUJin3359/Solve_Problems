@@ -36,7 +36,10 @@ public:
 	void print(Tree* root)
 	{
 		if (root->item != 'x')
+		{
 			cout << root->item;
+			delete root;
+		}
 		else
 		{
 			cout << root->item;
@@ -44,6 +47,7 @@ public:
 			print(root->child[3]);
 			print(root->child[0]);
 			print(root->child[1]);
+			delete root;
 		}
 	}
 };

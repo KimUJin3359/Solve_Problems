@@ -73,6 +73,26 @@
   - 출력 시 위아래 뒤집어서 출력
 ---
 
+[6. ATM(백준 : ATM)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/ATM.cpp)
+- [문제](https://www.acmicpc.net/problem/11399)
+- 사람 수와, 돈을 인출하는데 각각 걸리는 시간이 주어짐
+- 돈을 인출하는데 필요한 시간의 합의 최소값 구하기
+- 접근 방법
+  - priority queue 활용
+
+[7. A To B(백준 : A -> B)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/AToB.cpp)
+- [문제](https://www.acmicpc.net/problem/16953)
+- 정수 A를 B로 바꾸려함
+  - 2를 곱한다
+  - 1을 수의 가장 오른쪽에 추가한다
+- A를 B로 바꾸는데 필요한 연산의 최소값 구하기
+- 접근 방법
+  - B에서 A로 접근 ( 계산 횟수 줄이기 )
+  - 2의 배수인 것과 1로 끝나는 것은 공통 부분이 없음
+    - % 10 == 1 -> /= 10
+    - % 2 == 0 -> /= 2
+  - B가 A보다 작거나 같을 때 까지 반복, 최종 값이 A와 같지 않다면 -1 같다면 횟수 반환
+
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)
 
 [1. Escape(백준 : 탈출)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BFS/Escape.cpp)
@@ -359,3 +379,12 @@
   - (3, 2)의 상황에서 대각선 위는 두 칸의 정사각형, 왼쪽은 두 칸의 정사각형을 가지고 있지만
   - 위쪽에서 0칸을 가지고 있기 때문에 최대 1의 정사각형밖에 만들지 못함
   ```
+
+[9. Common Sentence(백준 : 공통 부분 문자열)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/CommonSentence.cpp)
+- [문제](https://www.acmicpc.net/problem/5582)
+- 두 문자열이 주어졌을 때, 두 문자열에 모두 포함된 가장 긴 공통 부문 문자열 길이 찾기
+- 접근 방식
+  - DP
+  - 두 문자의 크기만큼 표를 만들어 공통되는 문자의 갯수를 채워나감
+    - (i, j)의 문자가 같을 때 = (i - 1, j - 1) + 1
+ 

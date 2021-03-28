@@ -71,7 +71,6 @@
 - 접근 방법
   - 쿼드 트리 구현
   - 출력 시 위아래 뒤집어서 출력
----
 
 [6. ATM(백준 : ATM)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/ATM.cpp)
 - [문제](https://www.acmicpc.net/problem/11399)
@@ -92,6 +91,8 @@
     - % 10 == 1 -> /= 10
     - % 2 == 0 -> /= 2
   - B가 A보다 작거나 같을 때 까지 반복, 최종 값이 A와 같지 않다면 -1 같다면 횟수 반환
+
+---
 
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)
 

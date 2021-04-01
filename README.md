@@ -92,6 +92,25 @@
     - % 2 == 0 -> /= 2
   - B가 A보다 작거나 같을 때 까지 반복, 최종 값이 A와 같지 않다면 -1 같다면 횟수 반환
 
+[8. Zoo(백준 : 동물원)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/Zoo.cpp)
+- [문제](https://www.acmicpc.net/problem/12907)
+- 동물원에 N마리 동물(토끼/ 고양이)이 존재
+- 모든 토끼는 자신보다 키가 큰 토끼의 수를 말함
+- 모든 고양이는 자신보다 키가 큰 고양이의 수를 말함
+- 가능한 조합의 수
+- 접근 방법
+  - 유효성 검사(0, 1, 2 ... 순서에 맞게 존재하는지)
+  - 유효성 검사를 충족했을 때 조합의 수가 더 생길 수 있는지 판단
+
+[9. A and B(백준 : A와 B)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/AandB.cpp)
+- [문제](https://www.acmicpc.net/problem/12904)
+- A와 B로만 이루어진 영어 단어가 존재
+- 두 문자열 S와 T가 주어졌을 때, S를 T로 바꿀 수 있는지 확인
+  - 문자열의 뒤에 A를 추가
+  - 문자열을 뒤집고 뒤에 B를 추가
+- 접근 방법
+  - T에서 A로 끝나냐 B로 끝나냐에 따라 규칙을 거꾸로 적용
+
 ---
 
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)
@@ -213,7 +232,7 @@
 - N * N 크기의 도시가 존재
 - 마름모 모양의 영역에만 홈방범 서비스를 제공
 - 보안회사에서 손해를 보지 않으면서 최대한 많은 집에 홈방범 서비스를 제공하려할 때, 제공받는 가구의 수
-- 접근
+- 접근 방법
   - Brute Force
   - 맵을 다채우는 마름모의 크기 (3 / 2) * N 부터 2의 크기까지 모두 확인
   - 1의 크기는 기본적으로 모든 마을에서 만족함(홍방범 서비스의 비용 1, 가구 지불비용 최소 1)
@@ -223,12 +242,20 @@
 - 두 개의 계단이 존재
 - 최대 3명의 학생만이 계단을 이용할 수 있고, 한명이 다 쓰고난 후 다음 사람이 쓸 수 있음
 - 모든 사람이 다 내려갈 수 있는 최소 시간 구하기
-- 접근
+- 접근 방법
   - Brute Force
   - 각 사람들이 계단1, 계단2로 이동하는 모든 경우의 수를 계산
   - 실행시간을 단축시키기 위해 bit 연산자 사용
   - priority queue를 사용해 각 계단에 도착하는 최소 시간의 사람을 구해서 그 사람들 부터 내려보냄
 
+[11. Infinite String(백준 : 무한 문자열)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/InfiniteString.cpp)
+- [문제](https://www.acmicpc.net/problem/12871)
+- x가 abc일 떄, f(x)는 'abcabcabc...'
+- s와 t가 주어졌을 때 f(s)와 f(t)가 같은 문자열을 만드는지 판단
+- 접근 방법
+  - Brute Force
+  - s와 t중 더 짧은 문자열 기준(t로 둠)
+  - t의 사이즈만큼 substring을 만들면서 t안에서 반복되는 부분 문자열이 있을 경우, s에서도 반복되는지 
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)

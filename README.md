@@ -256,6 +256,22 @@
   - Brute Force
   - s와 t중 더 짧은 문자열 기준(t로 둠)
   - t의 사이즈만큼 substring을 만들면서 t안에서 반복되는 부분 문자열이 있을 경우, s에서도 반복되는지 
+
+[12. 2048(백준 : 2048(Easy))](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/2048.cpp)
+- [문제](https://www.acmicpc.net/problem/12100)
+- N크기의 보드가 주어짐
+- 2의 제곱꼴의 수, 또는 빈칸(0)이 주어질 때 5번 이동시켜서 얻을 수 있는 가장 큰 블록을 출력
+- 접근 방법
+  - Brute Force
+  - 위, 아래, 왼쪽, 오른쪽으로 모두 옮겨봄
+  - 5번째의 횟수에 전체 맵을 탐색하여, 가장 큰 값으로 갱신
+  - 이 문제는 변경한 값들을 기억하는 것이어렵기 때문에 새로운 맵을 계속해서 만들어서 값을 갱신하여 넘겨줌
+  ```
+  2 2 2              4 2 0
+  0 2 2   -(왼쪽)->  4 0 0
+  4 4 0              8 0 0
+  ```
+
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)
@@ -321,6 +337,8 @@
 - 접근 방식
   - DFS : 기본적으로 모든 경우의 수를 다 봐줘야 되는 문제
 
+[8. Make Rome Number(백준 : 로마 숫자 만들기]()
+- [문제](https://www.acmicpc.net/problem/16922)
 ---
 
 ### [DP](https://github.com/KimUJin3359/Solve_Problems/tree/master/DP)

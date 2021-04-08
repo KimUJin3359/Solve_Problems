@@ -330,15 +330,31 @@
     - 최악의 경우 tree상에 결과값(BFS)이 끝으로 갈수록 커진다면 모든 경우를 다 봐줘야 될 수 있음
     - 이를 대비하여, 처음 경우에 확률 중 큰 값 만을 찾아서 곱해 만든 결과값을 기준점으로 지정
 
-[7. Mountain Route(SW Expert Academy : 등산로 조성)]()
+[7. Mountain Route(SW Expert Academy : 등산로 조성)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/MountainRoute.cpp)
 - [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5PoOKKAPIDFAUq&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=++3+)
 - 높은 곳(가장 높은 봉우리에서 시작)부터 낮은 곳을 길을 만들 때 최대 길이
 - 입력받은 K의 높이만큼 딱 한번 길을 깎을 수 있음
 - 접근 방식
   - DFS : 기본적으로 모든 경우의 수를 다 봐줘야 되는 문제
 
-[8. Make Rome Number(백준 : 로마 숫자 만들기]()
+[8. Make Rome Number(백준 : 로마 숫자 만들기](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/MakeRomeNumber.cpp)
 - [문제](https://www.acmicpc.net/problem/16922)
+- I, V, X, L이 각각 1, 5, 10, 50을 의미
+- 로마 숫자 N개(1 ~ 20)를 사용해서 만들 수 있는 서로 다른 수의 개수
+- 접근 방식
+  - DFS
+  - 최대 50 * 20 -> 1000 까지 만들 수 있음
+  - 각 값을 만들었을 때 해당 항목을 갱신해주어서 visit을 판단하여 겹치는 숫자가 없이 갯수를 세어줌
+
+[9. Rolling Ball(백준 : 구슬 탈출 2)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/RollingBall.cpp)
+- [문제](https://www.acmicpc.net/problem/13460)
+- 빨간 구슬, 파랑 구슬, 구멍의 위치가 주어질 때 빨간 구슬을 탈출 시킬 수 있는 가장 최소의 횟수
+- 파랑 구슬이 같이 들어가서는 안됨
+- 접근 방식
+  - 각각의 구슬들을 벽에 닿을 때까지 움직여보는 작업을 각 방향으로 진행
+  - 만약 두 구슬이 겹친다면, 기존의 위치로 상하 판단
+  - 파랑 구슬을 먼저 움직인다 가정(파랑 구슬이 들어가면 그 이상 볼 필요가 없기 때문)
+
 ---
 
 ### [DP](https://github.com/KimUJin3359/Solve_Problems/tree/master/DP)
@@ -434,3 +450,13 @@
   - 두 문자의 크기만큼 표를 만들어 공통되는 문자의 갯수를 채워나감
     - (i, j)의 문자가 같을 때 = (i - 1, j - 1) + 1
  
+ [10. BOJ(백준 : BOJ 거리)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DP/BOJ.cpp)
+ - [문제](https://www.acmicpc.net/problem/12026)
+ - B, O, J 순서대로 보도블럭을 밟아가며 이동할 수 있음
+ - 해당 칸을 움직이는데 드는 비용은 거리의 제곱
+ - 목적지 까지 갈 수 있는 최소의 비용 구하기
+ - 접근 방식
+   - B, O, J의 좌표를 갖는 큐를 생성
+   - 각각의 좌표에서 올 수 있는 최소의 값을 선택
+     - 예를 들어 현재 J라면, O들의 배열 중 가장 J까지 오는데 cost가 적은 값을 택함(O의 배열까지 걸린 값 + O ~ 현재 J 까지 오는데 걸린 값)
+   - 마지막 까지 값을 갱신하여 만약 마지막 값이 초기값이 아니라면 해당 값 출력 

@@ -111,6 +111,14 @@
 - 접근 방법
   - T에서 A로 끝나냐 B로 끝나냐에 따라 규칙을 거꾸로 적용
 
+[10. Magician Shark And Tornado(백준 : 마법사 상어와 토네이도)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/MagicianSharkAndTornado.cpp)
+- [문제](https://www.acmicpc.net/problem/20057)
+- 접근 방법
+  - 모래의 이동 방향
+    - 1, 1 / 2, 2 처럼 두 번씩 반복하여 해당 길이만큼 이동
+    - 방향은 각 1 / 1 / 2 / 2 마다 바뀜
+  - 모래가 흩날리는 위치를 미리 입력한 후, 해당 위치가 칸 밖일 경우 겪자 밖으로 나간 모래의 양에 더해줌
+
 ---
 
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)
@@ -272,6 +280,30 @@
   4 4 0              8 0 0
   ```
 
+[13. Magician Shark And Fire Storn(백준 : 마법사 상어와 파이어 스톰)](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/MagicianSharkAndFireStorm.cpp)
+- [문제](https://www.acmicpc.net/problem/20058)
+- 접근 방법
+  - 맵 나누기
+    - 최대 2^6 크기의 맵을 2 / 4 / 8 / 16 .. 등 입력받은 수로 나누어줌
+  - 맵 돌리기
+    - 가장 껍데기부터 안으로 들어가면서 돌려줌(횟수는 한변의 길이 / 2)
+    - 위쪽 행의 첫번 째 인덱스부터 순서대로 오른쪽 열의 첫번 째 인덱스와 교환
+    - 교환 되면서 오른쪽 열의 값들이 위쪽 행으로 옮겨감
+    - 위쪽 행의 첫번 째 인덱스부터 아래쪽 행의 인덱스 역순으로 교환
+    - ... 
+    ```
+    4 4 4 4 4 4 4 4
+    4 3 3 3 3 3 3 4
+    4 3 2 2 2 2 3 4
+    4 3 2 1 1 2 3 4
+    4 3 2 1 1 2 3 4
+    4 3 2 2 2 2 3 4
+    4 3 3 3 3 3 3 4
+    4 4 4 4 4 4 4 4 
+    ```
+  - 완전 탐색으로 얼음 값이 감소할 구간을 찾기
+  - 가장 큰 블록(끊기지 않고 연결된 구간) 찾기
+    - 맵의 크기만큼 전체를 보지만, 이미 이어졌다고 판단된 부분은 다시보지 않음(Visited 배열 사용)  
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)
@@ -323,7 +355,7 @@
 - N명의 직원과 N개의 일이 존재
 - 직원들의 번호가 1부터 N까지 매겨져 있고, 해야할 일에도 번호가 1부터 N까지 매겨져 있을 때, i번 직원이 j의 일을 성공할 확률이 Pi,j
 - 주어진 일이 모두 성공할 확률의 최댓값을 구하는 프로그램
-- 접근 방식
+- 접근 방법
   - DFS : 기본적으로 모든 가능 경우의 수를 순열을 사용해 전부 다 봐줘야 하는 문제
   - Back tracking : 현재 구한 확률 값이 구해진 결과값보다 작을 때 더이상 보지 않음(확률의 최대값 1, 다른 수가 곱해진다 해서 현재 가진결과값 보다 커질 수 없음)
   - greedy
@@ -334,14 +366,14 @@
 - [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AV5PoOKKAPIDFAUq&probBoxId=AXf_stfartEDFAUO+&type=PROBLEM&problemBoxTitle=Day+18%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B43%29&problemBoxCnt=++3+)
 - 높은 곳(가장 높은 봉우리에서 시작)부터 낮은 곳을 길을 만들 때 최대 길이
 - 입력받은 K의 높이만큼 딱 한번 길을 깎을 수 있음
-- 접근 방식
+- 접근 방법
   - DFS : 기본적으로 모든 경우의 수를 다 봐줘야 되는 문제
 
 [8. Make Rome Number(백준 : 로마 숫자 만들기](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/MakeRomeNumber.cpp)
 - [문제](https://www.acmicpc.net/problem/16922)
 - I, V, X, L이 각각 1, 5, 10, 50을 의미
 - 로마 숫자 N개(1 ~ 20)를 사용해서 만들 수 있는 서로 다른 수의 개수
-- 접근 방식
+- 접근 방법
   - DFS
   - 최대 50 * 20 -> 1000 까지 만들 수 있음
   - 각 값을 만들었을 때 해당 항목을 갱신해주어서 visit을 판단하여 겹치는 숫자가 없이 갯수를 세어줌
@@ -350,10 +382,20 @@
 - [문제](https://www.acmicpc.net/problem/13460)
 - 빨간 구슬, 파랑 구슬, 구멍의 위치가 주어질 때 빨간 구슬을 탈출 시킬 수 있는 가장 최소의 횟수
 - 파랑 구슬이 같이 들어가서는 안됨
-- 접근 방식
+- 접근 방법
   - 각각의 구슬들을 벽에 닿을 때까지 움직여보는 작업을 각 방향으로 진행
   - 만약 두 구슬이 겹친다면, 기존의 위치로 상하 판단
   - 파랑 구슬을 먼저 움직인다 가정(파랑 구슬이 들어가면 그 이상 볼 필요가 없기 때문)
+
+[10. Baby Shark(백준 : 청소년 상어)](https://github.com/KimUJin3359/Solve_Problems/blob/master/DFS%26BACKTRACKING/BabyShark.cpp)
+- [문제](https://www.acmicpc.net/problem/19236)
+- 접근 방법
+  - 물고기 이동
+    - 1번 부터 16번 까지의 물고기를 확인
+    - 물고기가 존재할 경우, 이동가능성 여부를 판단하며 만약 이동 불가시 반시계방향으로 45도씩 회전
+    - 8번을 돌아 다시 원래 방향을 가리킨다면 이동을 할 수 없다 판단
+  - 상어의 이동
+    - 상어가 가려는 칸이 빈칸(물고기가 없는 칸)이 아니면 이동하여 다시 탐색(DFS)
 
 ---
 

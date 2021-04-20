@@ -316,6 +316,17 @@
   - 이름 장소에 소문자 혹은 . 이면 다음 문자 확인/ @이면 도메인 탐색 규칙으로 넘어감
   - 도메인 장소에 소문자가 나오면 다음 문자 확인 / .이면 탑도메인 탐색 규칙으로 넘어감
   - 탑 도메인 장소에는 com, net, org가 아닐 시 다음 문자열로 넘어감  
+
+[15. Sliding Bead](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/SlidingBead.cpp)
+- 구슬이 바닥으로 어지는 시작 위치의 개수
+- N * N크기의 정사각 격자 형태가 존재
+- # : 아래로 한칸
+- > : 오른쪽으로 한칸
+- < : 왼쪽으로 한칸
+- \* : 밑으로 한칸, 두번 째 만날 떄는 멈춤
+- 접근 방법
+  - 각각의 문자열을 마주쳤을 때, 주어진 방식대로 움직임
+
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)

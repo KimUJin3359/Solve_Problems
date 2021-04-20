@@ -304,6 +304,18 @@
   - 완전 탐색으로 얼음 값이 감소할 구간을 찾기
   - 가장 큰 블록(끊기지 않고 연결된 구간) 찾기
     - 맵의 크기만큼 전체를 보지만, 이미 이어졌다고 판단된 부분은 다시보지 않음(Visited 배열 사용)  
+
+[14. Mail Vertification](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/MailVertification.cpp)
+- 메일이 '이름@도메인.탑도메인'으로 구성
+- 이름은 소문자와 .으로만 구성
+- 도메인은 소문자로만 구성
+- 탑도메인은 com, net, org로 구성
+- 규격에 맞는 주소는 몇 개인지 찾기
+- 접근 방법
+  - 한 문자열 씩 brute force
+  - 이름 장소에 소문자 혹은 . 이면 다음 문자 확인/ @이면 도메인 탐색 규칙으로 넘어감
+  - 도메인 장소에 소문자가 나오면 다음 문자 확인 / .이면 탑도메인 탐색 규칙으로 넘어감
+  - 탑 도메인 장소에는 com, net, org가 아닐 시 다음 문자열로 넘어감  
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)

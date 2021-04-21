@@ -135,6 +135,14 @@
   - 만약 전체를 다 봤지만, 현재 시각에 들어온 업무가 없을 시 전체 업무중 최소 시간 업무를 수행
   - 현재 시각에 들어온 업무가 있을 시, 다른 곳에 담아두었던 업무를 다시 가져오고 현재 시각을 
 
+[12. Sale](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/Sale.cpp)
+- 문제
+- 공장의 물품을 팔려함
+- 거래처에서 원하는 물건의 갯수를 알 수 없으나, 요구량을 맞추지 못할경우 100원 -> 50원 -> 25원 -> 거래 중단으로 이어짐
+- 총 전체 주어지는 날의 평균 거래액을 소수 2째자리까지 문자열로 반환
+- 접근 방법
+  - 주어진대로 코딩
+
 ---
 
 ### [BFS](https://github.com/KimUJin3359/Solve_Problems/tree/master/BFS)

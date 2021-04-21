@@ -119,7 +119,7 @@
     - 방향은 각 1 / 1 / 2 / 2 마다 바뀜
   - 모래가 흩날리는 위치를 미리 입력한 후, 해당 위치가 칸 밖일 경우 겪자 밖으로 나간 모래의 양에 더해줌
 
-[11. Print](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/Work.cpp)
+[11. Work](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/Work.cpp)
 - 문제
 - '번호, 요청 시각, 업무량'
 - 대기 중 or 작업 중인 일이 없을 때, 업무가 들어오면 즉각 처리

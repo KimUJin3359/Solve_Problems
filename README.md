@@ -351,6 +351,14 @@
 - 접근 방법
   - 각각의 문자열을 마주쳤을 때, 주어진 방식대로 움직임
 
+[16. Make Number](https://github.com/KimUJin3359/Solve_Problems/blob/master/BRUTE_FORCE/MakeNumber.cpp)
+- 성냥개비로 숫자를 만듦
+- 성냥개비의 갯수가 주어졌을 때, 만들 수 있는 숫자의 갯수
+- 0을 제외한 숫자는 0으로 시작할 수 없음
+- 접근 방법
+  - 처음 숫자의 경우에만 1 ~ 9 으로 dfs
+  - 성냥개비의 갯수가 6일 때, 예외적으로 결과 + 1
+
 ---
 
 ### [DFS 및 Back Tracking](https://github.com/KimUJin3359/Solve_Problems/tree/master/DFS%26BACKTRACKING)

@@ -34,8 +34,6 @@
   - Brute-Force + Binary Search
     - 위의 경우에도, 모든 시간값을 다 봐주게 된다면 최대 60000000000번을 봐줘야 되었었음
     - 이를 binary search로 시간 단축하였음
-    - 자랑아닌 자랑이지만 **시간, 공간적으로 가장 적은 방법**으로 해결
-![캡처(1)](https://user-images.githubusercontent.com/50474972/108233793-77d67880-7187-11eb-98df-781bdb9f6128.JPG)
 
 [2. Count Group(SW Expert Academy : 창용 마을 무리의 개수)](https://github.com/KimUJin3359/Solve_Problems/blob/master/ALGORITHM/CountGroup.cpp)
 - [문제](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AXc2524K9JYDFAWs&contestProbId=AWngfZVa9XwDFAQU&probBoxId=AXf1vIAqWMkDFAUO&type=PROBLEM&problemBoxTitle=Day+16%28%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B41%29&problemBoxCnt=3)

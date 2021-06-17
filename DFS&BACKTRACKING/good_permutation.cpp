@@ -7,9 +7,9 @@ int FLAG = 0;
 
 int  find_in(string str)
 {
-    for (int i = 2; i < N / 2; i++)
+    for (int i = 2; i <= str.size() / 2; i++)
     {
-        for (int j = 0; j <= N - (2 * i); j++)
+        for (int j = 0; j <= str.size() - (2 * i); j++)
         {
             if (str.substr(j, i) == str.substr(j + i, i))
                 return (0);
@@ -32,7 +32,7 @@ void dfs(string ans)
     }
     for (char c = '1'; c <= '3'; c++)
     {
-        if (find_in(ans) && ans.size() >= 1 && ans[ans.size() - 1] != c)
+        if (ans.size() == 0 || (find_in(ans) && ans[ans.size() - 1] != c))
         {
             ans.push_back(c);
             dfs(ans);

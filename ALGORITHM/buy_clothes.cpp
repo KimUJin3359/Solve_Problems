@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int COLOR[128][2];
@@ -31,4 +32,19 @@ int buy_clothes(vector<string> color, vector<int> prices)
     answer += (prices[1] > prices[0] * 2) ? 
     ((color.size() - same_color) * 2 * prices[0]) : (color.size() - same_color) * prices[1];
     return (answer);
+}
+
+int main()
+{
+    vector<string> color;
+    vector<int> prices;
+
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    color.push_back("RW");
+    color.push_back("WR");
+    prices.push_back(3500);
+    prices.push_back(6000);
+    cout << buy_clothes(color, prices);
+    return (0);
 }
